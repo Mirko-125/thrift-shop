@@ -1,13 +1,16 @@
 import { Button } from "@/components/ui/button"
 import './App.css'
 
-function App() {
+import { useNavigate } from 'react-router-dom';
 
-  return (
-    <>
-      <Button>Click me!</Button>
-    </>
-  )
+function App() 
+{
+    const navigate = useNavigate();
+    return (
+      <>
+        <Button onClick={() => navigate('/NewPage')}>Click me!</Button>
+      </>
+    )
 }
 
 export default App
