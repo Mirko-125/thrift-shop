@@ -1,0 +1,6 @@
+@thrift_shop_back_HostAddress = http://localhost:5144
+
+GET {{thrift_shop_back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
