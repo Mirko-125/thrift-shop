@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Q90IPWnW9HiL+iJBU+smC02zMe9M3nVDQQl7oQzgp5Y=",
+  "Source": "thrift-shop-back",
+  "BasePath": "_content/thrift-shop-back",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

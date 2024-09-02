@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: kafa2020
+      POSTGRES_DB: thrift-shop-db
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  webapi:
+    image: mcr.microsoft.com/dotnet/aspnet:8.0
+    container_name: dotnet-webapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:81"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=postgres-db;Port=5433;Username=user;Password=kafa2020;Database=thrift-shop-db
+    depends_on:
+      - postgres-db
+
+volumes:
+  postgres_data:
