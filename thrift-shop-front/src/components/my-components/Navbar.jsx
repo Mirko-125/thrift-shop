@@ -5,10 +5,18 @@ function Navbar()
     const navigate = useNavigate();
     return (
         <nav className="navbar">
-            <div className="links">
-                <a onClick={() => navigate('/')}>Home</a>
-                <a onClick={() => navigate('/NewPage')}>New Page</a>
-            </div>
+            <a onClick={() => navigate('/')} className="clickable-link">LOGO</a>
+            <ul className="navigation-links">
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">New arrivals</a></li>
+                <li className="link"><a onClick={() => navigate('/NewPage')} className="clickable-link">Clothing</a></li>
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Accesories</a></li>
+            </ul>
+            <ul className="user-links">
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Search</a></li>
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Sign in</a></li>
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Favorites</a></li>
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Bag</a></li>
+            </ul>
         </nav>
     )
 }
