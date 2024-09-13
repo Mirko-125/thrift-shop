@@ -23,18 +23,26 @@
 
 .navbar
 {
-  background-color: #ffffff;
-  color: #333;
+  position: fixed;
+  width: 100%;
+  /*background-color: #ffffff;*/
+  color: #ffffff;/*#333*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(10.5px);
+
 }
 
 .navbar:hover
 {
-  background-color: #505050;
+  background-color: #333333;
   -webkit-transition: background-color 750ms linear;
   -ms-transition: background-color 750ms linear;
   transition: background-color 750ms linear;
@@ -73,9 +81,38 @@
   align-items: center;
 }
 
+.link:active
+{
+  text-decoration: underline;
+  color: rgb(129, 166, 255);
+}
+
 .link:hover
 {
   text-decoration: underline;
+}
+
+
+.title-menu {
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  text-align: center; 
+
+}
+
+.title-menu h2, .title-menu p {
+  margin: 0; 
+  color: #fff; 
+}
+
+.title-menu p {
+  text-decoration: underline;
+}
+
+.title-menu p:hover {
+  color: rgb(129, 166, 255);
 }
 
 *{

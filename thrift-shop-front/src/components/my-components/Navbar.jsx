@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import logoSvg from '../../../public/vite.svg';
+import logoSvg from '/vite.svg';
 
 function Navbar()
 {

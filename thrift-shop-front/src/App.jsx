@@ -10,9 +10,20 @@ function App()
     return (
       <>
         <Navbar/>
-        <div className="frontPage">
-            <Button onClick={() => navigate('/NewPage')}>Click me!</Button>
-        </div>
+        <a onClick={() => navigate('/new')} className="main-page">
+          <div className="main-image-background">
+          <img src="http://localhost:8888/background_inspo.jpg" alt="pic">
+          </img>
+          </div>
+          <div className="title-menu">
+            <h2>
+              NEW COLLECTION
+            </h2>
+            <p className="clickable-link">
+              view
+            </p>
+          </div>
+        </a>
       </>
     )
 }

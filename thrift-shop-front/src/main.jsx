@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import NewPage from './pages/NewPage.jsx'
+import New from './pages/new.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter(
   [
     { path: '/', element: <App /> },
-    { path: '/NewPage', element: <NewPage /> }
+    { path: '/new', element: <New /> }
   ]
 );
 
