@@ -1,11 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 
+import logoSvg from '../../../public/vite.svg';
+
 function Navbar()
 {
     const navigate = useNavigate();
     return (
         <nav className="navbar">
-            <a onClick={() => navigate('/')} className="clickable-link">LOGO</a>
+            <a onClick={() => navigate('/')} className="clickable-link">
+                <img src={logoSvg} alt="LOGO"/>
+            </a>
             <ul className="navigation-links">
                 <li className="link"><a onClick={() => navigate('/')} className="clickable-link">New arrivals</a></li>
                 <li className="link"><a onClick={() => navigate('/NewPage')} className="clickable-link">Clothing</a></li>
