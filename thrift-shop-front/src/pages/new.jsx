@@ -1,9 +1,13 @@
+import Navbar from "@/components/my-components/Navbar"
 
 function New() 
 {
     return (
         <>
-            This page shows new articles to the collection
+            <Navbar/>
+            <h2>
+                This page shows new articles to the collection
+            </h2>
         </>
     )
 }

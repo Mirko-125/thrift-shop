@@ -11,8 +11,8 @@ function Navbar()
                 <img src={logoSvg} alt="LOGO"/>
             </a>
             <ul className="navigation-links">
-                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">New arrivals</a></li>
-                <li className="link"><a onClick={() => navigate('/NewPage')} className="clickable-link">Clothing</a></li>
+                <li className="link"><a onClick={() => navigate('/new')} className="clickable-link">New arrivals</a></li>
+                <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Clothing</a></li>
                 <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Accesories</a></li>
             </ul>
             <ul className="user-links">
