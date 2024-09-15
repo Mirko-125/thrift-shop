@@ -1,0 +1,22 @@
+[
+	{
+		"name" : "Summer shirt",
+		"category" : "Shirts",
+		"image" : "http://localhost:8888/sample1.jpg"
+	},
+	{
+		"name" : "Black coat",
+		"category" : "Coats",
+		"image" : "http://localhost:8888/sample2.jpg"
+	},
+	{
+		"name" : "Orange hoodie",
+		"category" : "Hoodies",
+		"image" : "http://localhost:8888/sample3.jpg"
+	},
+	{
+		"name" : "Black boots",
+		"category" : "Shoes",
+		"image" : "http://localhost:8888/sample4.jpg"
+	}
+]
