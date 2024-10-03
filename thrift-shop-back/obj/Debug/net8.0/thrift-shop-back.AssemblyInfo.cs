@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("thrift-shop-back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+080671f4e0897f1fc770a60b57874749b1fd3a33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a80155199924ad749eb5c78ca364c4394c7377f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("thrift-shop-back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("thrift-shop-back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/my-components/Navbar"
 import Scroll from "@/components/my-components/Scroll"
+import Footer from "@/components/my-components/Footer"
 
 import { useNavigate } from 'react-router-dom';
 
@@ -41,7 +42,7 @@ function App()
           </div>
           <div className="two-categories">
             <div className="item-thumbnail">
-              <a href='/article'>
+              <a href='/category'>
                 <img src="http://localhost:8888/sample1.jpg" alt="pic">
                 </img>
                 <div className="inner-text">
@@ -62,6 +63,7 @@ function App()
             </div>
           </div>
         </div>
+        <Footer/>
       </>
     )
 }
