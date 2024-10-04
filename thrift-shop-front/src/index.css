@@ -37,7 +37,7 @@
   position: fixed;
   width: 100%;
   /*background-color: #ffffff;*/
-  color: #ffffff;/*#333*/
+  color: #000000;/*#333*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,6 +227,39 @@
   align-items: center;
 }
 
+.location
+{
+  font-size: 1.2rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery
+{
+  display:flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  gap: 5px;
+}
+
+.art-info
+{
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
 
 *{
   box-sizing: border-box;
@@ -240,6 +273,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Work in progress, there is a bug that it cannot show it */
+.new-arrivals
+{
+  display: none;
+}
+
+.link:hover + .new-arrivals
+{
+  display: block;
+  color: red;
+} 
 
 body {
   margin: 0;

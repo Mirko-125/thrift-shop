@@ -2,21 +2,25 @@
 	{
 		"name" : "Summer shirt",
 		"category" : "Shirts",
-		"image" : "http://localhost:8888/sample1.jpg"
+		"image" : "http://localhost:8888/sample1.jpg",
+		"price": "$19.99"
 	},
 	{
 		"name" : "Black coat",
 		"category" : "Coats",
-		"image" : "http://localhost:8888/sample2.jpg"
+		"image" : "http://localhost:8888/sample2.jpg",
+		"price": "$49.99"
 	},
 	{
 		"name" : "Orange hoodie",
 		"category" : "Hoodies",
-		"image" : "http://localhost:8888/sample3.jpg"
+		"image" : "http://localhost:8888/sample3.jpg",
+		"price": "$29.99"
 	},
 	{
 		"name" : "Black boots",
 		"category" : "Shoes",
-		"image" : "http://localhost:8888/sample4.jpg"
+		"image" : "http://localhost:8888/sample4.jpg",
+		"price": "$39.99"
 	}
 ]

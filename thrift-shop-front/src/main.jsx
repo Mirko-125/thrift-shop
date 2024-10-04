@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import New from './pages/New.jsx'
 import Category from './pages/Category.jsx'
+import New_Arrivals from './pages/New_Arrivals.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter(
   [
     { path: '/', element: <App /> },
-    { path: '/new', element: <New /> },
-    { path: '/category', element: <Category /> }
+    { path: '/category', element: <Category /> },
+    { path: '/new-arrivals', element: <New_Arrivals /> }
   ]
 );
 

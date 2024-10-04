@@ -22,10 +22,10 @@ function App()
     return (
       <>
         <Scroll/>
-        <Navbar/>
+        <Navbar color="white"/>
         <div className="main-page-content">
           <div className="new-collection">
-            <a onClick={() => navigate('/new')} className="main-page">
+            <a onClick={() => navigate('/new-arrivals')} className="main-page">
               <div className="main-image-background">
               <img src="http://localhost:8888/background_inspo.jpg" alt="pic">
               </img>
