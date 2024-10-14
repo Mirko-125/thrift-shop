@@ -332,6 +332,12 @@
   color: red;
 } 
 
+.punk-logo-title
+{
+  width: 50px;
+  height: 25px;
+}
+
 body {
   margin: 0;
   /*

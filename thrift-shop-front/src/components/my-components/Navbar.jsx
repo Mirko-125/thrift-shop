@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import logoSvg from '/vite.svg';
+import logoSvg from '/punk.png';
 
 function Navbar({color="black"})
 {
@@ -19,7 +19,7 @@ function Navbar({color="black"})
         <>
             <nav className="navbar">
                 <a onClick={() => navigate('/')} className="clickable-link">
-                    <img src={logoSvg} alt="LOGO"/>
+                    <img className="punk-logo-title" src={logoSvg} alt="LOGO"/>
                 </a>
                 <ul className="navigation-links">
                     <li className="link"><a onClick={() => navigate('/new-arrivals')} className="clickable-link">New arrivals</a></li>
