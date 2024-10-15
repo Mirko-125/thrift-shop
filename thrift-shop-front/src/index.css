@@ -240,7 +240,6 @@
   display:flex;
   flex-direction: row;
   align-content: flex-start;
-  flex-wrap: wrap;
   justify-content: flex-start;
   max-width: 100%;
   max-height: 100%;
@@ -267,7 +266,6 @@
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
 }
