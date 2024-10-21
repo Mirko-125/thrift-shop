@@ -1,26 +1,50 @@
 [
-	{
-		"name" : "Summer shirt",
-		"category" : "Shirts",
-		"image" : "http://localhost:8888/sample1.jpg",
-		"price": "$19.99"
-	},
-	{
-		"name" : "Black coat",
-		"category" : "Coats",
-		"image" : "http://localhost:8888/sample2.jpg",
-		"price": "$49.99"
-	},
-	{
-		"name" : "Orange hoodie",
-		"category" : "Hoodies",
-		"image" : "http://localhost:8888/sample3.jpg",
-		"price": "$29.99"
-	},
-	{
-		"name" : "Black boots",
-		"category" : "Shoes",
-		"image" : "http://localhost:8888/sample4.jpg",
-		"price": "$39.99"
-	}
+    {
+        "name": "Summer shirt",
+        "category": "Shirts",
+        "image": "http://localhost:8888/sample1.jpg",
+        "price": "$19.99"
+    },
+    {
+        "name": "Black coat",
+        "category": "Coats",
+        "image": "http://localhost:8888/sample2.jpg",
+        "price": "$49.99"
+    },
+    {
+        "name": "Orange hoodie",
+        "category": "Hoodies",
+        "image": "http://localhost:8888/sample3.jpg",
+        "price": "$29.99"
+    },
+    {
+        "name": "Black boots",
+        "category": "Shoes",
+        "image": "http://localhost:8888/sample4.jpg",
+        "price": "$39.99"
+    },
+    {
+        "name": "Sunglasses",
+        "category": "Accessories",
+        "image": "http://localhost:8888/sample5.jpg",
+        "price": "$15.99"
+    },
+    {
+        "name": "Fur coat and purse",
+        "category": "Coats",
+        "image": "http://localhost:8888/sample6.jpg",
+        "price": "$99.99"
+    },
+    {
+        "name": "Black jacket",
+        "category": "Jackets",
+        "image": "http://localhost:8888/sample7.jpg",
+        "price": "$59.99"
+    },
+    {
+        "name": "Skirt",
+        "category": "Bottoms",
+        "image": "http://localhost:8888/sample8.jpg",
+        "price": "$24.99"
+    }
 ]

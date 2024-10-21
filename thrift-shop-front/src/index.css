@@ -251,8 +251,9 @@
 .gallery
 {
   display:flex;
-  flex-direction: row;
-  justify-content: row;
+  flex-direction: row;  
+  align-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
   margin-top: 15px;
@@ -267,7 +268,7 @@
   image-resolution: from-image;
   image-resolution: 300dpi;
   image-resolution: from-image 300dpi;
-  image-resolution: 300dpi snap;
+  image-resolution: 300dpi snap; /* I have no idea what the fuck I am doing*/
 }
 .art-info h1, p
 {
