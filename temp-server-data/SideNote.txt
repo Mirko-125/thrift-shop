@@ -1,0 +1,5 @@
+List of fake API responses in files:
+
+Resizable_Gallery.jsx
+Clothing.jsx
+App.jsx

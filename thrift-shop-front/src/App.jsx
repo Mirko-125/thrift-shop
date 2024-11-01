@@ -4,10 +4,16 @@ import Navbar from "@/components/my-components/Navbar"
 import Scroll from "@/components/my-components/Scroll"
 import Footer from "@/components/my-components/Footer"
 
+import { background, url } from './links.js';
+
 import { useNavigate } from 'react-router-dom';
 
 function App() 
 {
+    // maybe making a function that generates a random number betweern
+    // 1 and number of articles, htan replace the number in {`${url}/sample1.jpg`}
+    // so that it shows a random article each time the page is loaded
+    
     /*
     const [content,setContent] = useState([]);
 
@@ -27,7 +33,7 @@ function App()
           <div className="new-collection">
             <a onClick={() => navigate('/new-arrivals')} className="main-page">
               <div className="main-image-background">
-              <img src="http://localhost:8888/background_inspo.jpg" alt="pic">
+              <img src={background} alt="pic">
               </img>
               </div>
               <div className="title-menu">
@@ -43,7 +49,7 @@ function App()
           <div className="two-categories">
             <div className="item-thumbnail">
               <a href='/category'>
-                <img src="http://localhost:8888/sample1.jpg" alt="pic">
+                <img src={`${url}/sample1.jpg`} alt="pic">
                 </img>
                 <div className="inner-text">
                   <h1>Shirts</h1>
@@ -53,7 +59,7 @@ function App()
             </div>
             <div className="item-thumbnail">
               <a href='/article'>
-                <img src={"http://localhost:8888/sample2.jpg"} alt="pic">
+                <img src={`${url}/sample2.jpg`} alt="pic">
                 </img>
                 <div className="inner-text">
                   <h1>Hats</h1>

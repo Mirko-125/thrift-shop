@@ -323,24 +323,64 @@
   cursor: pointer;
 }
 
-/* Work in progress, there is a bug that it cannot show it */
-.new-arrivals
-{
-  display: none;
-}
-
-.link:hover + .new-arrivals
-{
-  display: block;
-  color: red;
-} 
-
 .punk-logo-title
 {
   width: 50px;
   height: 25px;
 }
 
+.fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9; 
+  pointer-events: none; 
+}
+
+.sliding-window 
+{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 300px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  /* blur
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  */
+  transition: right 0.3s ease-in-out;
+}
+
+.sliding-window.visible 
+{
+  right: 0;
+}
+
+.xButtonExit
+{
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-window {
+  z-index: 5; /*experiment with this*/
+  position: fixed; 
+  top: -100%;
+  width: 100%;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  transition: top 0.3s ease-in-out;
+}
+
+.dropdown-window.visible {
+  top: 0;
+}
 body {
   margin: 0;
   /*

@@ -1,0 +1,13 @@
+Refactor the code and sort out the files
+Home page - needs a couple of more details about articles + header updating + fix performance
+Navbar - add finally the popup menu for clothing categories
+	[
+		Search, searching anything quickly right?
+		Sign in should be a slider and if needed to register just to dynamicaly render it
+		Favorites, if signed in it should redirect to favorites gallery if not redirection to sign in
+		Same thing for bag, right?
+	]
+Better API calls and filtering jsons
+Now clothing should have it's own categories
++ when clicking on article it should show articles specific page with it's ALL properties, well data.
+Accesories should be same thing as clothes

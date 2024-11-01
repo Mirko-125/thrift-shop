@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 
-import Navbar from "@/components/my-components/Navbar"
+import ClothingTypes from "@/components/my-components/ClothingTypes";
 import Resizable_Gallery from "@/components/my-components/Resizable_Gallery";
+import Navbar from "@/components/my-components/Navbar"
 import Footer from "@/components/my-components/Footer"
 
 import { url } from '../links.js';
 
-function New_Arrivals() 
+function Clothing() 
 {
-    //#region Moved to seperate file, now just to transform it into an actual api call
-    const [content,setContent] = useState([]);
+    //#region State and Fake API Response
+    const [content, setContent] = useState([]);
     
     const fakeApiResponse = [
         {
@@ -68,10 +69,14 @@ function New_Arrivals()
         }
     ];
 
+    const [categories, setCategories] = useState([]);
+
     useEffect(() => {
         // Faking it
         setTimeout(() => {
             setContent(fakeApiResponse);
+            const uniqueCategories = [...new Set(fakeApiResponse.map(item => item.category))];
+            setCategories(uniqueCategories);
         }, 1000);
     }, []);
 
@@ -82,29 +87,19 @@ function New_Arrivals()
           .then(data => setContent(data));
     }, []);
 
-    // console.table(content);
-    */
     console.table(content);
+    */
+    console.table(categories);
     //#endregion
 
     return (
         <>
             <Navbar/>
-            <br/>
-            <br/>
-            <br/>
-            <div className="location">
-                <h1>
-                    Home / New Arrivals
-                </h1>
-            </div>
-            <Resizable_Gallery content={content}/>
-            <br/>
-            <br/>
-            <br/>
+            <ClothingTypes types={categories}/>
+            <Resizable_Gallery content={categories}/>
             <Footer/>
         </>
     )
 }
 
-export default New_Arrivals;
+export default Clothing
