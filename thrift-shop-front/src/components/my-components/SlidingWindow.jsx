@@ -1,14 +1,27 @@
-import React from 'react';
-import XButton from '../../../public/x.svg';
+import React, { Suspense, lazy } from 'react';
+import XButton from '/x.svg';
+
+const SignInFill = lazy(() => import('./_SignInFill.jsx'));
+const SearchFill = lazy(() => import('./_SearchFill.jsx'));
+
+const ComponentMap =
+{
+    "SignIn": SignInFill,
+    "Search": SearchFill,
+};
 
 const SlidingWindow = ({ isVisible, onClose, motive }) => {
-    // motive will be linked to the component that renders the correct inside content
+    
+    const ComponentToRender = ComponentMap[motive] || null;
+
     return (
       <div className={`sliding-window ${isVisible ? 'visible' : ''}`}>
         <button onClick={onClose}>
           <img className="xButtonExit" src={XButton} alt="X" />
         </button>
-        {/* Slider content */}
+        <Suspense fallback={<div>Loading...</div>}>
+        {ComponentToRender && <ComponentToRender />}
+        </Suspense>
       </div>
     );
   };
