@@ -19,7 +19,7 @@ const SlidingWindow = ({ isVisible, onClose, motive }) => {
         <button onClick={onClose}>
           <img className="xButtonExit" src={XButton} alt="X" />
         </button>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="please-wait">Loading...</div>}>
         {ComponentToRender && <ComponentToRender />}
         </Suspense>
       </div>

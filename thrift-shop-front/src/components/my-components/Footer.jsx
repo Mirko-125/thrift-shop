@@ -1,10 +1,7 @@
-import { useNavigate } from 'react-router-dom';
-
 import logoSvg from '/punk.png';
 
 function Footer()
 {
-    const navigate = useNavigate();
     return (
         <>
             <footer className="footer">
