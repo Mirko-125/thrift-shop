@@ -568,6 +568,14 @@
   text-align: center;
  }
 
+ .page-part-loader
+ {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 20%;
+  font-size: 1.5rem;
+ }
+
  .how-it-works
  {
     font-family: "Roboto Condensed", sans-serif;
@@ -597,7 +605,7 @@
 }
 
 .ui-input:focus {
-  border-color: #6c63ff;
+  border-color: #743a3a;
 }
 
 .ui-input-underline {

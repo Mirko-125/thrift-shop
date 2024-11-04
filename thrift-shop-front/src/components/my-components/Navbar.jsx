@@ -36,10 +36,8 @@ function Navbar({ color = "black" }) {
         };
     }, []);
 
-    const handleDrop = (motive) => {
-        if (isSlidingWindowVisible) {
-            toggleSlidingWindow();
-        }
+    const handleDrop = (motive) => 
+    {
         toggleDropdownWindow('', motive);
     };
 
