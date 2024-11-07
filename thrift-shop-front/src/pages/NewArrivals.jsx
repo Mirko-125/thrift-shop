@@ -9,7 +9,7 @@ import Scroll from "@/components/my-components/Scroll";
 function NewArrivals() 
 {
     const { items: newArrivals, loading: loadingNewArrivals } = useLatestArticles();
-    
+
     return (
         <>
             <Scroll/>

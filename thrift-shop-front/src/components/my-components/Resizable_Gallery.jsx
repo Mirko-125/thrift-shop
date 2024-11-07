@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from './Slider.jsx';
+import { useNavigate } from 'react-router-dom';
 
 function Resizable_Gallery({content}) 
 {
@@ -10,6 +11,8 @@ function Resizable_Gallery({content})
         setSize(newSize);
     };
 
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="slider-box">
@@ -19,8 +22,8 @@ function Resizable_Gallery({content})
                 {content.map((content) => {
                     return (
                         <div className="art-info" key={content.name} style={{ width: `${size - offset}%`, height: `${size - offset}%` }}>
-                            <a href='/category'>
-                                <img src={content.image} alt="pic" className="pic">
+                            <a onClick={()=>navigate(`/article/${content.idcode}`)}>
+                                <img src={content.picture[0]} alt="pic" className="pic">
                                 </img>
                                 <div>
                                     <h1>{content.name}</h1>

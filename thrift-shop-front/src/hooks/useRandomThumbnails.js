@@ -6,7 +6,7 @@ const useRandomThumbnails = () => {
 
     useEffect(() => {
         fetchArticlesFromApi().then(data => {
-            const images = data.map(item => item.image);
+            const images = data.map(item => item.picture[0]);
             const randomImages = [];
             const usedIndices = new Set();
 

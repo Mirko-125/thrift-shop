@@ -50,7 +50,7 @@ function App()
             <div className="item-thumbnail">
               <a href='/category'>
                 <img src={`${url}/sample1.jpg`} alt="pic">
-                </img>
+                </img> 
                 <div className="inner-text">
                   <h1>Shirts</h1>
                   <p>view</p>

@@ -265,6 +265,7 @@
 
 .art-info
 {
+  cursor: pointer;
   image-resolution: from-image;
   image-resolution: 300dpi;
   image-resolution: from-image 300dpi;

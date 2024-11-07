@@ -1,0 +1,11 @@
+{
+  "idcode": "BLS0148",
+  "name": "Baggy jeans",
+  "price": 15.99,
+  "colour": "LightBlue",
+  "available": true,
+  "size": ["XS", "S", "M", "L", "XL"],
+  "picture": ["<url1>", "<url2>","<url3>"],
+  "category": "Pants",
+  "description": "perfect for skaters"
+}
