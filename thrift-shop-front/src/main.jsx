@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 import NewArrivals from './pages/NewArrivals.jsx'
+import Articles from './pages/Articles.jsx'
 import Article from './pages/Article.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -12,7 +13,8 @@ const router = createBrowserRouter(
   [
     { path: '/', element: <App /> },
     { path: '/new-arrivals', element: <NewArrivals /> },
-    { path: '/article/:idcode', element: <Article /> }
+    { path: '/articles/:category', element: <Articles /> },
+    { path: '/article/:idcode', element: <Article /> },
   ]
 );
 

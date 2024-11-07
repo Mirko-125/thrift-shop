@@ -39,7 +39,7 @@ const ClothingShort = () => {
                     <div className="dropdown-content">
                         <div className="category-links">
                             {items.map((item, index) => (
-                                <a className="category-link" key={index} onClick={()=>console.log("XD")}>
+                                <a className="category-link" key={index} onClick={()=>navigate(`/articles/${item.toLowerCase()}`)}>
                                     <h3>{item}</h3>
                                 </a>
                             ))}
