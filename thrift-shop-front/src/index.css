@@ -277,6 +277,23 @@
   text-align: center; 
 }
 
+.article-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-images {
+  width: 55%;
+}
+
+.a-image {
+  /*later*/
+}
+
+.a-shopping {
+
+}
+
 *{
   box-sizing: border-box;
   -webkit-user-select: none; /* Safari */        
@@ -405,6 +422,12 @@
 {
   width: 50px;
   height: 25px;
+}
+
+.punk-logo-title-bigger
+{
+  width: 200px;
+  height: 100px;
 }
 
 .fade-overlay {
