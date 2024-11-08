@@ -484,12 +484,6 @@
   height: 35px;
 }
 
-.diamond:hover
-{
-  transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out;
-}
-
 .tooltip{
   position: relative;
 }
@@ -498,27 +492,40 @@
 .tooltip::after
 {
   --scale: 0;
+  --tooltip-color: black;
+  --arrow-size: 10px;
 
   position: absolute;
   top: -.25rem;
   right: 50%;
-  transform: translateX(50%) translateY(-100%) scale(var(--scale));
+  transform: translateX(50%) translateY(var(--translate-y,0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
 }
 
-.tooltip::before
-{
+.tooltip::before{
+  --translate-y: calc(-100% - var(--arrow-size));
+
   content: attr(data-tooltip);
   color: white;
   width: max-content;
   padding: .5rem;
-  border-radius: .2rem;
-  background: #333;
+  background: var(--tooltip-color);
   text-align: center;
 }
 
-.avatar:hover::before
-{
+.tooltip:hover::before,
+.tooltip:hover::after{
   --scale: 1;
+}
+
+.tooltip:after{
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
 }
 
 .dropdown-window {
