@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -279,7 +280,7 @@
 
 .article-page {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .a-images {
@@ -287,11 +288,16 @@
 }
 
 .a-image {
-  /*later*/
+
+}
+
+.a-shopping *
+{
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .a-shopping {
-
+  width: 45%;
 }
 
 *{
@@ -428,6 +434,9 @@
 {
   width: 200px;
   height: 100px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fade-overlay {
@@ -469,6 +478,49 @@
   height: 50px;
 }
 
+.diamond
+{
+  width: 35px;
+  height: 35px;
+}
+
+.diamond:hover
+{
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tooltip{
+  position: relative;
+}
+
+.tooltip::before,
+.tooltip::after
+{
+  --scale: 0;
+
+  position: absolute;
+  top: -.25rem;
+  right: 50%;
+  transform: translateX(50%) translateY(-100%) scale(var(--scale));
+}
+
+.tooltip::before
+{
+  content: attr(data-tooltip);
+  color: white;
+  width: max-content;
+  padding: .5rem;
+  border-radius: .2rem;
+  background: #333;
+  text-align: center;
+}
+
+.avatar:hover::before
+{
+  --scale: 1;
+}
+
 .dropdown-window {
   z-index: 5; /*experiment with this*/
   position: fixed; 
@@ -490,6 +542,75 @@
   font-size: 1.5rem;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.code
+{
+  user-select: text;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 12px;
+  color:gray;
+}
+
+.price 
+{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+.colour
+{
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin: 20px 20px 20px;
+  text-align: center;
+}
+
+.underline
+{
+  color: black;
+  border-top: 1px solid black;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sizes-t
+{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sizes
+{
+  width: 30%;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.buy-or-favorite
+{
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .fill-in-area
