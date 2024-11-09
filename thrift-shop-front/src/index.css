@@ -33,6 +33,19 @@
   */
 }
 
+.restriction-content
+{
+  
+}
+
+.sign-in-restriction
+{
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 20%;
+  font-size: 1.5rem;
+}
+
 .navbar
 {
   position: fixed;
@@ -222,7 +235,7 @@
 }
 
 .footer {
-  border-top: 2px solid black;
+  border-top: 2px solid lightgray;
   padding: 2vh;
   width: 100%;
   z-index: 7;
@@ -298,6 +311,11 @@
 
 .a-shopping {
   width: 45%;
+  height: 50%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 150px; 
+  right: 0;
 }
 
 *{
@@ -430,15 +448,6 @@
   height: 25px;
 }
 
-.punk-logo-title-bigger
-{
-  width: 200px;
-  height: 100px;
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .fade-overlay {
   position: fixed;
   top: 0;
@@ -477,11 +486,32 @@
   width: 50px;
   height: 50px;
 }
+.diamond {
+  border-style: solid;
+  border-color: transparent transparent rgb(0, 0, 0) transparent;
+  border-width: 0 11.25px 11.25px 11.25px;
+  height: 0;
+  width: 22.5px;
+  box-sizing: content-box;
+  position: relative;
+  margin-bottom: 35px;
+}
+.diamond:after {
+  content: "";
+  position: absolute;
+  top: 11.25px;
+  left: -11.25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+  border-width: 31.5px 22.5px 0 22.5px;
+}
 
-.diamond
+.diamond:hover
 {
-  width: 35px;
-  height: 35px;
+  cursor: pointer;
+  color: lightblue;
 }
 
 .tooltip{
@@ -567,15 +597,6 @@
   font-weight: bold;
   font-style: normal;
   font-size: 1.5rem;
-  margin: 20px 20px 20px;
-  text-align: center;
-}
-
-.colour
-{
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 1.1rem;
   margin: 20px 20px 20px;
   text-align: center;
 }

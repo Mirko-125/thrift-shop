@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import useCategories from "../hooks/useCategories.js";
 import useLatestArticles from "../hooks/useLatestArticles.js";
 
-import Scroll from '@/components/my-components/Scroll.jsx';
-import Navbar from '@/components/my-components/Navbar.jsx';
-import Resizable_Gallery from '@/components/my-components/Resizable_Gallery.jsx';
+import Scroll from '../components/my-components/Scroll.jsx';
+import Navbar from '../components/my-components/Navbar.jsx';
+import Resizable_Gallery from '../components/my-components/Resizable_Gallery.jsx';
+import Footer from '../components/my-components/Footer.jsx';
 
 function Articles() {
     let get_the_json = window.location.pathname.split('/').pop();
@@ -66,6 +67,7 @@ function Articles() {
             <br/>
             <br/>
             <br/>
+            <Footer/>
         </>
     );
 };

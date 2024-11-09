@@ -81,8 +81,8 @@ function Navbar({ color = "black" }) {
                 <ul className="user-links">
                     <li className="link"><a onClick={() => toggleSlidingWindow("","Search")} className="clickable-link">Search</a></li>
                     <li className="link"><a onClick={() => toggleSlidingWindow("","SignIn")} className="clickable-link">Sign in</a></li>
-                    <li className="link"><a onClick={() => navigate('/articles/x')} className="clickable-link">Favorites</a></li>
-                    <li className="link"><a onClick={() => navigate('/')} className="clickable-link">Bag</a></li>
+                    <li className="link"><a onClick={() => navigate('/favorites')} className="clickable-link">Favorites</a></li>
+                    <li className="link"><a onClick={() => navigate('/bag')} className="clickable-link">Bag</a></li>
                 </ul>
             </nav>
             {isSlidingWindowVisible && <div className="fade-overlay"></div>}
