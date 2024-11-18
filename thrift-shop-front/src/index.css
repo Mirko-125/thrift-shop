@@ -33,10 +33,17 @@
   */
 }
 
+.error
+{
+  color:#ad0034
+}
+
+/*
 .restriction-content
 {
   
 }
+*/
 
 .sign-in-restriction
 {
@@ -409,7 +416,7 @@
 
 .mini-cat:hover
 {
-  color:#743a3a;
+  color:#ad0034;
   transition: color 0.3s ease-in-out;
 }
 
@@ -661,7 +668,7 @@
   --width-of-input: 200px;
   --border-height: 1px;
   --border-before-color: rgba(0, 0, 0);
-  --border-after-color: #743a3a;
+  --border-after-color: #ad0034;
   --input-hovered-color: #4985e01f;
   position: relative;
   width: var(--width-of-input);
@@ -738,7 +745,7 @@
 
 .sign-in-options:hover
 {
-  color:#743a3a;
+  color:#ad0034;
   cursor: pointer;
 }
 
@@ -855,7 +862,7 @@
 }
 
 .ui-input:focus {
-  border-color: #743a3a;
+  border-color: #ad0034;
 }
 
 .ui-input-underline {
@@ -864,7 +871,7 @@
   left: 0;
   height: 2px;
   width: 100%;
-  background-color:#743a3a;
+  background-color:#ad0034;
   transform: scaleX(0);
   transition: transform 0.3s;
 }
@@ -897,7 +904,7 @@
 }
 
 .ui-input:focus ~ .ui-input-icon {
-  color:#743a3a;
+  color:#ad0034;
 }
 
 .ui-input-icon svg {
